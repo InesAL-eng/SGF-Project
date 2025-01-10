@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidget"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuAdd_a_File">
+     <property name="title">
+      <string>Add a File</string>
+     </property>
+     <addaction name="actioncontinue"/>
+    </widget>
+    <widget class="QMenu" name="menuEdit_a_File">
+     <property name="title">
+      <string>Edit a File</string>
+     </property>
+     <addaction name="actioncontinue_2"/>
+    </widget>
+    <addaction name="actionDelete_a_file"/>
+    <addaction name="menuAdd_a_File"/>
+    <addaction name="menuEdit_a_File"/>
+   </widget>
+   <widget class="QMenu" name="menurefresh">
+    <property name="title">
+     <string>refresh </string>
+    </property>
+    <addaction name="actionrefresh_table_menu"/>
+   </widget>
+   <widget class="QMenu" name="menuInit">
+    <property name="title">
+     <string>Init</string>
+    </property>
+    <addaction name="actionInit_Vdisk"/>
+    <addaction name="actionCompactage"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menurefresh"/>
+   <addaction name="menuInit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionDelete_a_file">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::EditDelete"/>
+   </property>
+   <property name="text">
+    <string>Delete a file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actioncontinue">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::FormatJustifyCenter"/>
+   </property>
+   <property name="text">
+    <string>continue &amp; chainee</string>
+   </property>
+   <property name="iconText">
+    <string>continue &amp; chainee</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actioncontinue_2">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentSaveAs"/>
+   </property>
+   <property name="text">
+    <string>continue &amp; chainne</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionrefresh_table_menu">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ViewRefresh"/>
+   </property>
+   <property name="text">
+    <string>refresh table menu</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionInit_Vdisk">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::FolderOpen"/>
+   </property>
+   <property name="text">
+    <string>Init Vdisk</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionCompactage">
+   <property name="text">
+    <string>Compactage</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
